@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="hero  w-full min-h-screen bg-gradient-to-tr from-[#080001] to-[#30197d] text-[white] relative ">
+        <div class="container  box-border mx-auto w-[800px] h-[180px]  absolute  pl-[20px] pr-[20px]  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 after:content-['']  after:w-[180px]  after:h-[180px] after:bg-red-700  after:absolute after:left-[-30px]  after:top-[-50px] after:z-[-1]
+        before:content-['']  before:w-[180px]  before:h-[180px] before:bg-blue-400 before:rounded-full  before:absolute before:right-[-30px]  before:bottom-[-50px] before:z-[-1]">
+          <div id="clock" class=" w-full h-full bg-[rgba(235,0,2,0.11) rounded-[10px] flex items-center justify-center backdrop-blur-[40px] bg-white/15">
+            <span id="hrs" class="text-[80px] w-[110px] inline-block text-center relative after:content-['HOURS']  after:text-[16px] after:absolute after:bottom-[-5px]  after:left-1/2 after:-translate-x-1/2 ">00</span>
+            <span   class="text-[80px] w-[110px] inline-block text-center relative after:content-['']  after:text-[16px] after:absolute after:bottom-[-5px]  after:left-1/2 after:-translate-x-1/2  ">:</span>
+            <span  id="min"class="text-[80px] w-[110px] inline-block text-center relative after:content-['MINS']  after:text-[16px] after:absolute after:bottom-[-5px]  after:left-1/2 after:-translate-x-1/2 ">00</span>
+            <span   class="text-[80px] w-[110px] inline-block text-center relative after:content-['']  after:text-[16px] after:absolute after:bottom-[-5px]  after:left-1/2 after:-translate-x-1/2 ">:</span>
+            <span  id="sec" class="text-[80px] w-[110px] inline-block text-center relative after:content-['SEC']  after:text-[16px] after:absolute after:bottom-[-5px]  after:left-1/2 after:-translate-x-1/2 ">00</span>
+          </div>
+        </div>
+<!-- <button id="taymer" data-tooltip-target="tooltip-default" type="button"
+  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none mt-[310px]  ml-[20px]
+  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 
+  dark:hover:bg-blue-700 dark:focus:ring-blue-800">Taymer</button> -->
+
+    </div>
+<script src="./js/main.js"></script>
+</body>
+</html>
