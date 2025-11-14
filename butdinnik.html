@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class=" bg-gradient-to-tr from-[#080001] to-[#30197d] text-[white] w-full h-screen">
+        <div class="container mx-auto relative z-10 flex items-center justify-center pt-[200px]">
+            <div class="border max-w-lg  flex flex-col items-center justify-center bg-white/5 backdrop-blur-md rounded-2xl p-6 text-center  ">
+                <a class="absolute top-[5px] left-[5px]" href="./index.html">
+                    <img class="bg-[white] w-[20px] rounded-[5px]" src="./imeges/Button (9).png" alt="rasmlar">
+                </a>
+                <h1 class="text-2xl font-semibold mb-4">Budilnik</h1>
+                <p class="text-sm text-slate-600 mb-3">Vaqtni tanlang (soat : daqiq):</p>
+                <h1 id="textMt" class="text-sm text-red-600 mb-3 hidden">Budilnik qo'yildi</h1>
+                <input type="time" id="time" class="block w-full max-w-[300px] rounded-[5px] pt-[20px] p-2.5 bg-neutral-secondary-medium
+                             border border-default-medium text-heading text-sm rounded-base focus:ring-brand
+                              focus:border-brand shadow-xs placeholder:text-body" required />
+                <audio id="audio" controls class="opacity-0 w-[1px] h-[1px]">
+                    <source src="./music/hip-hop-news-271179.mp3">
+                </audio>
+                <div class="flex gap-[30px]">
+                    <button id="stopbtn" class="bg-[red] text-[width] mb-[10px] w-[120px] h-[35px] rounded-[5px] mt-[20px] cursor-pointer">
+                        to'xtatish
+                    </button>
+                    <button id="continur" class="bg-[blue] mb-[10px] w-[120px]  h-[35px] rounded-[5px] mt-[20px] cursor-pointer">
+                        boshlash
+                    </button>
+                </div>
+        
+            </div>  </div>
+    </section>
+ 
+
+    <script src="./js/soat.js"></script>
+</body>
+</html>
